@@ -32,7 +32,7 @@ def statistics(player_A_or_computerA_move,player_B_or_computerB_move):
         print("the (B) wins ")
         print()
         statiscs_of_the_game[1] += 1
-        statiscs_of_the_game[3] += 1
+        statiscs_of_the_game[3] += 1 
 
     elif player_A_or_computerA_move == player_B_or_computerB_move:
         print("the match endeed in a draw ")
