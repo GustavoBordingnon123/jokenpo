@@ -32,7 +32,7 @@ def statistics(player_A_or_computerA_move,player_B_or_computerB_move):
         print("the (B) wins ")
         print()
         statiscs_of_the_game[1] += 1
-        statiscs_of_the_game[3] += 1 
+        statiscs_of_the_game[3] += 1
 
     elif player_A_or_computerA_move == player_B_or_computerB_move:
         print("the match endeed in a draw ")
@@ -49,6 +49,21 @@ def final_statistics_print(statiscs_of_the_game):
     #the total of game starts in 1, cause if you ended the game with zero games, the calculator gonna bug by division por zero
     print("the total of matchs is = ",statiscs_of_the_game[3])
 
+def division_por_zero(zero,player_A_or_computerA_move,player_B_or_computerB_move):
+
+    if zero == 0 and player_A_or_computerA_move == 4 or zero == 0 and player_B_or_computerB_move == 4:
+        print()
+        print("you cant finish the game with zero matches, please made at least 1 match ")
+        print()
+        player_A_or_computerA_move = int(input("please player A, choose what move you go do now: "))
+        while player_A_or_computerA_move < 1 or player_A_or_computerA_move >= 4:
+            player_A_or_computerA_move = int(input("this option is invalid, please chosse one mode of the summary and diferent from 4:  "))
+
+        player_B_or_computerB_move = int(input("now its the player B turn, choose what move you go do now: "))
+        while  player_B_or_computerB_move < 1 or  player_B_or_computerB_move >= 4:
+            player_B_or_computerB_move = int(input("this option is invalid, please chosse one mode of the summary and diferent from 4:  "))
+
+        statiscs_of_the_game = statistics(player_A_or_computerA_move,player_B_or_computerB_move)
 
 game_mode_chossed = game_mode()
 print()
@@ -73,6 +88,10 @@ while game_mode_chossed != 4:
 
         if player_A_or_computerA_move == 4 or player_B_or_computerB_move == 4:
 
+            division_por_zero(statiscs_of_the_game[3],player_A_or_computerA_move,player_B_or_computerB_move)
+
+        if player_A_or_computerA_move == 4 or player_B_or_computerB_move == 4:
+
             #the player a gonna be 0, to not bug if you join 2 times or more in the first game mode
             player_A_or_computerA_move = 0
 
@@ -93,6 +112,10 @@ while game_mode_chossed != 4:
 
         player_B_or_computerB_move = randint (1,3)
         print("computer B move = ",player_B_or_computerB_move)
+
+        if player_A_or_computerA_move == 4:
+                        
+            division_por_zero(statiscs_of_the_game[3],player_A_or_computerA_move,player_B_or_computerB_move)
 
         if player_A_or_computerA_move == 4:
 
