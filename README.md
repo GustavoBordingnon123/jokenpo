@@ -12,3 +12,4 @@ The game jokenpo, made in python
  <h2 id="Versions"><strong>Versions:</strong></h2>
 <p>0.1: just made the game</p>
 <p>0.2: translated the code to english and added functions</p>
+<p>0.3: addeed division for zero</p>
