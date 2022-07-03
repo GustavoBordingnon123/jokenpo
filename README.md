@@ -1,7 +1,6 @@
 # jokenpo
 The game jokenpo, made in python
 <h1>Project : Jokenpo</h1>
-<hr>
  <h2 id="about"><strong>About:</strong></h2>
 <p>This project is the popular game "jokenpo" in code, i made three version to play, that you can choose how you gonna play with the menu</p>
 
