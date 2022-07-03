@@ -2,7 +2,7 @@
 The game jokenpo, made in python
 <h1>Project : Jokenpo</h1>
 <ul>
-  <li><a  href="">About the project</a></li>
+  <li><a  href="#about">About the project</a></li>
   <li><a  href="">Versions</a></li>
  </ul>
  
